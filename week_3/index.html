@@ -6,20 +6,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>David Chu's China Bistro</title>
+    <!--Кароч, лінки від фреймворка css-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!--Шрифти з google fonts-->
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <!---->
 </head>
 
 <body>
+    <!--Налаштування верхньої частини сайту header з меню, номером телефоном і назвою з лого-->
     <header>
+        <!--З фреймворку об'являємо клас-->
         <nav id="header-nav" class="navbar navbar-default">
+            <!--Вся інфа в header буде в цьому контейнері, є ще container-fluid алу він зжирає всі margin і розширює сайт на повну ширину без відступів-->
             <div class="container">
+                <!-- for mobile compatible-->
+                <div class="navbar-header">
+                    <!--logo-->
+                    <a href="index.html" class="pull-left visible-md visible-lg">
+                        <div id="logo-img" alt="Logo image"></div>
+                    </a>
+                    <!--Назва ресторану-->
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <h1>David Chu`s China Bistro</h1>
+                        </a>
+                        <p> <img src="images/star-k-logo.png" alt="Kosher certification">
+                            <span>Kosher certified</span>
+                        </p>
+                    </div>
+                    <!--Муштрування меню, а саме іконок і тексту в header, а потім при зменшенні розміру складеного меню
+                            data-target="#collapsable-nav" відповідає за клікабельність кожної кнопки за допомогою фреймворку
+                            при об'явленні списку кнопок меню потрібно застосовувати даний id
+                            class="sr-only" означає що при screen read з'являється значок складеного меню-->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- mobile compatible navbar-header ended)
+                    Створення кнопок меню
+                    br class="hidden-xs" відповідає за зменшення місця кнопки при її перебуванні у широкому форматі сайту
+                    (при зменшенні пробіл з'являється і кнопка меню стає горизонтальною)-->
 
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="menu-categories.html">
+                                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards
+                            </a>
+                        </li>
+                        <li id="phone" class="hidden-xs">
+                            <a href="tel:410-602-5008">
+                                <span>410-602-5008</span></a>
+                            <div>* We Deliver</div>
+                        </li>
+                        <!--#nav-list-->
+                    </ul>
 
+                    <!--.collapse .navbar-collapse-->
+                </div>
             </div>
         </nav>
     </header>
+    <!--Шось буде зв'язано з телефоном-->
+
+
+    <!--the main content of our site page
+    class="img-responsive visible-xs" картинка з'являється в малому вікні-->
+    <div id="main-content" class="container">
+        <div class="jumbotron">
+            <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs">
+        </div>
+    </div>
 
     <!-- jQuery (Bootstrap JS plugins depend on it) -->
     <script src="js/jquery-2.1.4.min.js"></script>
