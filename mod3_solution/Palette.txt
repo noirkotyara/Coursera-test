@@ -1,0 +1,19 @@
+-------------------Colors
+Background
+rgb(224, 198, 164)
+Header company name
+rgb(66, 33, 6)
+
+
+
+
+--------------------Fonts:   Raleway
+-----company-name
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,600;0,700;1,200;1,400&display=swap" rel="stylesheet">
+-----cite
+Regular 400 italic
+-----content 
+Regular 400
+-----Conten-names
+Semi-bold 600
+
